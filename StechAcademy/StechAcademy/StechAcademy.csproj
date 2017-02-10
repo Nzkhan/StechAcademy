@@ -123,7 +123,7 @@
     <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Admin.Master" />
-    <Content Include="Stream.aspx" />
+    <Content Include="AdminStream.aspx" />
     <Content Include="StudentCouncelling.aspx" />
     <Content Include="StudentDashboard.aspx" />
     <Content Include="StudentRegistration.aspx" />
@@ -232,6 +232,7 @@
     <Compile Include="Carrers.aspx.designer.cs">
       <DependentUpon>Carrers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionClass.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -317,12 +318,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Stream.aspx.cs">
-      <DependentUpon>Stream.aspx</DependentUpon>
+    <Compile Include="AdminStream.aspx.cs">
+      <DependentUpon>AdminStream.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Stream.aspx.designer.cs">
-      <DependentUpon>Stream.aspx</DependentUpon>
+    <Compile Include="AdminStream.aspx.designer.cs">
+      <DependentUpon>AdminStream.aspx</DependentUpon>
     </Compile>
     <Compile Include="StudentCouncelling.aspx.cs">
       <DependentUpon>StudentCouncelling.aspx</DependentUpon>
