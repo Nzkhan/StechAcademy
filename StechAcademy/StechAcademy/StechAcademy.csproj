@@ -127,7 +127,6 @@
     <Content Include="StudentCouncelling.aspx" />
     <Content Include="StudentDashboard.aspx" />
     <Content Include="StudentRegistration.aspx" />
-    <Content Include="User.Master" />
     <Content Include="fonts\et-line.eot" />
     <Content Include="fonts\et-line.ttf" />
     <Content Include="fonts\et-line.woff" />
@@ -136,6 +135,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="User.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
