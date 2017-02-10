@@ -58,9 +58,84 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AdminCourses.aspx" />
+    <Content Include="AdminDashboard.aspx" />
+    <Content Include="AdminEnquiry.aspx" />
+    <Content Include="AdminFeedback.aspx" />
+    <Content Include="AdminOffers.aspx" />
+    <Content Include="AdminRegistration.aspx" />
+    <Content Include="AdminUsers.aspx" />
+    <Content Include="BscCS.aspx" />
+    <Content Include="BscIT.aspx" />
+    <Content Include="Carrers.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Courses.aspx" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\et-line-font.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\nivo-lightbox.css" />
+    <Content Include="css\nivo_themes\default\close%402x.png" />
+    <Content Include="css\nivo_themes\default\close.png" />
+    <Content Include="css\nivo_themes\default\default.css" />
+    <Content Include="css\nivo_themes\default\loading%402x.gif" />
+    <Content Include="css\nivo_themes\default\loading.gif" />
+    <Content Include="css\nivo_themes\default\next%402x.png" />
+    <Content Include="css\nivo_themes\default\next.png" />
+    <Content Include="css\nivo_themes\default\prev%402x.png" />
+    <Content Include="css\nivo_themes\default\prev.png" />
+    <Content Include="css\style.css" />
+    <Content Include="Downloads.aspx" />
+    <Content Include="Enquiry.aspx" />
+    <Content Include="Facilities.aspx" />
+    <Content Include="Faculties.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="fonts\et-line.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Gallery.aspx" />
+    <Content Include="images\about-img.jpg" />
+    <Content Include="images\contact-bg.jpg" />
+    <Content Include="images\home-bg-slideshow1.jpg" />
+    <Content Include="images\home-bg-slideshow2.jpg" />
+    <Content Include="images\portfolio-img1.jpg" />
+    <Content Include="images\portfolio-img2.jpg" />
+    <Content Include="images\portfolio-img3.jpg" />
+    <Content Include="images\portfolio-img4.jpg" />
+    <Content Include="images\portfolio-img5.jpg" />
+    <Content Include="images\portfolio-img6.jpg" />
+    <Content Include="images\portfolio-img7.jpg" />
+    <Content Include="images\portfolio-img8.jpg" />
+    <Content Include="images\team1.jpg" />
+    <Content Include="images\team2.jpg" />
+    <Content Include="images\team3.jpg" />
+    <Content Include="images\team4.jpg" />
+    <Content Include="indexTheme.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\imagesloaded.min.js" />
+    <Content Include="js\isotope.js" />
+    <Content Include="js\jquery.backstretch.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\nivo-lightbox.min.js" />
+    <Content Include="js\smoothscroll.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Admin.Master" />
+    <Content Include="Stream.aspx" />
+    <Content Include="StudentCouncelling.aspx" />
+    <Content Include="StudentDashboard.aspx" />
+    <Content Include="StudentRegistration.aspx" />
     <Content Include="User.Master" />
+    <Content Include="fonts\et-line.eot" />
+    <Content Include="fonts\et-line.ttf" />
+    <Content Include="fonts\et-line.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -87,6 +162,132 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminCourses.aspx.cs">
+      <DependentUpon>AdminCourses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCourses.aspx.designer.cs">
+      <DependentUpon>AdminCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEnquiry.aspx.cs">
+      <DependentUpon>AdminEnquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEnquiry.aspx.designer.cs">
+      <DependentUpon>AdminEnquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFeedback.aspx.cs">
+      <DependentUpon>AdminFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFeedback.aspx.designer.cs">
+      <DependentUpon>AdminFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOffers.aspx.cs">
+      <DependentUpon>AdminOffers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminOffers.aspx.designer.cs">
+      <DependentUpon>AdminOffers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegistration.aspx.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminRegistration.aspx.designer.cs">
+      <DependentUpon>AdminRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.aspx.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.aspx.designer.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BscCS.aspx.cs">
+      <DependentUpon>BscCS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BscCS.aspx.designer.cs">
+      <DependentUpon>BscCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BscIT.aspx.cs">
+      <DependentUpon>BscIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BscIT.aspx.designer.cs">
+      <DependentUpon>BscIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Carrers.aspx.cs">
+      <DependentUpon>Carrers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrers.aspx.designer.cs">
+      <DependentUpon>Carrers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Downloads.aspx.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Downloads.aspx.designer.cs">
+      <DependentUpon>Downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Enquiry.aspx.cs">
+      <DependentUpon>Enquiry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Enquiry.aspx.designer.cs">
+      <DependentUpon>Enquiry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Facilities.aspx.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Facilities.aspx.designer.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculties.aspx.cs">
+      <DependentUpon>Faculties.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculties.aspx.designer.cs">
+      <DependentUpon>Faculties.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +296,20 @@
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.aspx.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.cs">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,8 +317,37 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
+    <Compile Include="Stream.aspx.cs">
+      <DependentUpon>Stream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stream.aspx.designer.cs">
+      <DependentUpon>Stream.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentCouncelling.aspx.cs">
+      <DependentUpon>StudentCouncelling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentCouncelling.aspx.designer.cs">
+      <DependentUpon>StudentCouncelling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDashboard.aspx.cs">
+      <DependentUpon>StudentDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentDashboard.aspx.designer.cs">
+      <DependentUpon>StudentDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.aspx.designer.cs">
+      <DependentUpon>StudentRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>

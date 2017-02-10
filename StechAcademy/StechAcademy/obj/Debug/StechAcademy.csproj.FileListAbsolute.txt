@@ -1,0 +1,18 @@
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\bin\StechAcademy.dll.config
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\bin\StechAcademy.dll
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\bin\StechAcademy.pdb
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\obj\Debug\StechAcademy.csprojResolveAssemblyReference.cache
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\obj\Debug\StechAcademy.dll
+c:\users\mohammed_khan\documents\visual studio 2013\Projects\StechAcademy\StechAcademy\obj\Debug\StechAcademy.pdb
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.dll.config
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.dll
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.pdb
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.csprojResolveAssemblyReference.cache
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.dll
+D:\nz\S-TechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.pdb
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.dll.config
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.dll
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\bin\StechAcademy.pdb
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.csprojResolveAssemblyReference.cache
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.dll
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\obj\Debug\StechAcademy.pdb
