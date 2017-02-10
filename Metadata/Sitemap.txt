@@ -1,0 +1,36 @@
+List of pages in the website (SiteMap)
+
+
+
+User Pages
+|
+|_______> Home page
+|_______> Contact Us
+|_______> About Us
+|_______> Feedback
+|_______> Facilities
+|_______> Student Councelling
+|_______> Downloads
+|_______> Carrers
+|_______> Gallery
+|_______> Faculties
+|_______> Sign Up
+|_______> Sign In
+|_______> Student Dashboard
+|_______> Student Registration
+|_______> Courses
+	  |
+	  |_______> Bsc IT
+	  |_______> Bsc CS
+
+	
+Admin Pages
+|
+|_______> Admin Dashboard
+|_______> Stream
+|_______> Courses
+|_______> Offers
+|_______> Registration
+|_______> Feedback
+|_______> Enquiry
+|_______> Users

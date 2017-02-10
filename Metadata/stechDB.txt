@@ -1,0 +1,27 @@
+create database stech
+
+
+//Stream table// 
+create table stream (streamid int primary key identity(1,1), streamName varchar(10))
+
+//Courses table//
+create table courses (courseid int primary key identity(1,1), courseName varchar(10), streamid int FOREIGN KEY REFERENCES stream(streamid))
+
+//Course Year table//
+create table courseYear (CYid int primary key identity(1,1), CourseYear varchar(12),streamid int FOREIGN KEY REFERENCES stream(streamid), courseid int FOREIGN KEY REFERENCES course(courseid)) 
+
+//Offers table//
+create table offers (offerid itn primary key identity(1,1), offerName varchar(12),offerDesc varchar(150),streamid int FOREIGN KEY REFERENCES stream(streamid),courseid int FOREIGN KEY REFERENCES course(courseid), fees int , validFrom datetime,validTo datetime)
+
+//Registration table//
+create table registration (regId int primary key identity(1,1) , firstname varchar(10), lastName varchar(10),userName varchar(12),password password , DOB datetime , nationality varchar(10), phoneNo int,EmailId varchar(25), Address varchar(150),gender int,college varchar(20), emrgContactName varchar(12) , relation varchar(12), emrgPhoneNo int, offerid int FOREIGN KEY REFERENCES offer(offerid),streamid int FOREIGN KEY REFERENCES stream(streamid), courseid int FOREIGN KEY REFERENCES course(courseid))
+
+//Feedback table//
+create table feedback (feedbackid int primary key identity(1,1), name varchar(12) , emailId varchar(25),phoneNo int , gerder int, feedback varchar(150))
+
+//Enquiry table//
+create table enquiry (enquiryId int primary key identity(1,1),name varchar(12), emailId varchar(25),phoneNo int , gerder int, enquiry varchar(150))
+
+
+//Users table//
+create table users (userid int primary key identity(1,1) ,firstname varchar(10), lastName varchar(10),userName varchar(12),password password , EmailId varchar(25),phoneNo int,gender int ,userType varchar(1))
