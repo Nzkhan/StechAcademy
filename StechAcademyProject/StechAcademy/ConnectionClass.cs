@@ -9,7 +9,7 @@ namespace ConnectionLink
 {
     public class ConnectionClass
     {
-        static string strcon = "Data Source = (Local); Initial Catalog = STech; Integrated Security = True";
+        static string strcon = "Data Source = MOHAMMEDKHAN; Initial Catalog = stech; Integrated Security = True";
         SqlConnection con = new SqlConnection(strcon);
         public DataTable getData(string query)
         {
@@ -23,6 +23,7 @@ namespace ConnectionLink
 
         public void IfAdd(string query)
         {
+            con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
             con.Close();
