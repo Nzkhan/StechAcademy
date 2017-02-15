@@ -74,6 +74,7 @@
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\et-line-font.css" />
     <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\formStyle.css" />
     <Content Include="css\nivo-lightbox.css" />
     <Content Include="css\nivo_themes\default\close%402x.png" />
     <Content Include="css\nivo_themes\default\close.png" />
