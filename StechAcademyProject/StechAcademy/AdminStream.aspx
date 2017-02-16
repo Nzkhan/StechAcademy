@@ -11,14 +11,12 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="container">
         <div class="col-lg-offset-4 col-lg-4" id="panel">
             <h2>Stream</h2>
-
             <div class="group">
                 <input runat="server" id="txtbxStream" type="text" required>
                 <span class="highlight"></span>
@@ -28,18 +26,16 @@
             <div class="row">
                 <div class="col-md-4 pull-right">
                     <asp:Button ID="btnSubmit" type="submit" runat="server" OnClick="btnSubmit_Click" class="btn btn-success" Text="Submit"></asp:Button>
-                    </div>
-                     <div class="col-md-4 pull-right">
+                </div>
+                <div class="col-md-4 pull-right">
                     <asp:Button ID="btnCancel" runat="server" OnClick="btnCancel_Click" class="btn btn-danger" Text="Cancel"></asp:Button>
                 </div>
             </div>
             <br />
         </div>
     </div>
-
     <script type="text/javascript">
-
-</script>
+    </script>
     <br />
     <br />
     <br />

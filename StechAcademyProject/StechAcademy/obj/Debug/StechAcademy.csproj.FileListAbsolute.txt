@@ -19,6 +19,6 @@ C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademy\StechAcademy\o
 C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\bin\StechAcademy.dll.config
 C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\bin\StechAcademy.dll
 C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\bin\StechAcademy.pdb
-C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\obj\Debug\StechAcademy.csprojResolveAssemblyReference.cache
 C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\obj\Debug\StechAcademy.dll
 C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\obj\Debug\StechAcademy.pdb
+C:\Users\mohammed_khan\Documents\GitHub\StechAcademy\StechAcademyProject\StechAcademy\obj\Debug\StechAcademy.csprojResolveAssemblyReference.cache

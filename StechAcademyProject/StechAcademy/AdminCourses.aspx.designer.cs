@@ -13,6 +13,15 @@ namespace StechAcademy {
     public partial class AdminCourses {
         
         /// <summary>
+        /// successAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successAlert;
+        
+        /// <summary>
         /// DDLStream control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,13 @@ namespace StechAcademy {
         protected global::System.Web.UI.WebControls.DropDownList DDLStream;
         
         /// <summary>
-        /// txtbxStream control.
+        /// txtbxCourse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtbxStream;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtbxCourse;
         
         /// <summary>
         /// btnSubmit control.

@@ -51,5 +51,10 @@ namespace ConnectionLink
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.ExecuteNonQuery();
         }
+
+        public void closeConn()
+        {
+            con.Close();
+        }
     }
 }
