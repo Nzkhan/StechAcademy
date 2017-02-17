@@ -16,9 +16,30 @@ namespace StechAcademy
         {
             if (!IsPostBack)
             {
+                BindGrid();
                 BindStreamDropDown();
+                CoursesForm.Visible = false;
+                CoursesTable.Visible = true;
             }
         }
+
+
+        private void BindGrid()
+        {
+            string query = "select courseId ,courses.courseName , stream.streamName from courses inner join stream on courses.streamid = Stream.StreamId";
+            DataTable dt = c.getData(query);
+            GVCourses.DataSource = dt;
+            GVCourses.DataBind();
+
+            if (dt.Rows.Count == 0)
+            {
+                noInfoAlert.Visible = true;
+                CoursesTable.Visible = false;
+            }
+            c.closeConn();
+        }
+
+
         private void BindStreamDropDown()
         {
             string query = " Select * from Stream";
@@ -54,6 +75,31 @@ namespace StechAcademy
         {
             txtbxCourse.Value = "";
             DDLStream.SelectedIndex = 0;
+        }
+
+        protected void GVFeedback_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void GVFeedback_PageIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GVFeedback_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
+
+        protected void GVFeedback_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void GVFeedback_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
         }
 
         

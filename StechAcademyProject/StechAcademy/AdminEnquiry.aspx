@@ -79,7 +79,7 @@
                 <label>Email</label>
                 <br />
                 <br />
-                <input runat="server" id="txtbxEmailid" type="text" >
+                <input runat="server" id="txtbxEmailid" readonly="true" type="text" >
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 
@@ -89,7 +89,7 @@
                 <label>Phone No</label>
                 <br />
                 <br />
-                <input runat="server" id="txtbxPhonenum" type="text" >
+                <input runat="server" id="txtbxPhonenum" readonly="true" type="text" >
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 

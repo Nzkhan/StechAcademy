@@ -17,10 +17,10 @@ create table offers (offerid itn primary key identity(1,1), offerName varchar(12
 create table registration (regId int primary key identity(1,1) , firstname varchar(10), lastName varchar(10),userName varchar(12),password password , DOB datetime , nationality varchar(10), phoneNo int,EmailId varchar(25), Address varchar(150),gender int,college varchar(20), emrgContactName varchar(12) , relation varchar(12), emrgPhoneNo int, offerid int FOREIGN KEY REFERENCES offer(offerid),streamid int FOREIGN KEY REFERENCES stream(streamid), courseid int FOREIGN KEY REFERENCES course(courseid))
 
 //Feedback table//
-create table feedback (feedbackid int primary key identity(1,1), name varchar(12) , emailId varchar(25),phoneNo int , gerder int, feedback varchar(150))
+create table feedback (feedbackid int primary key identity(1,1), name varchar(12) , emailId varchar(25),phoneNo int , gender varchar(6), feedback varchar(150))
 
 //Enquiry table//
-create table enquiry (enquiryId int primary key identity(1,1),name varchar(12), emailId varchar(25),phoneNo int , gerder int, enquiry varchar(150))
+create table enquiry (enquiryId int primary key identity(1,1),name varchar(12), emailId varchar(25),phoneNo int , gender varchar(6),  enquiry varchar(150))
 
 
 //Users table//

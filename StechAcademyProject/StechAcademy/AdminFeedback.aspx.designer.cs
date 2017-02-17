@@ -13,13 +13,49 @@ namespace StechAcademy {
     public partial class AdminFeedback {
         
         /// <summary>
-        /// successAlert control.
+        /// noInfoAlert control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successAlert;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl noInfoAlert;
+        
+        /// <summary>
+        /// ImgNoData control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgNoData;
+        
+        /// <summary>
+        /// FeedbackTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl FeedbackTable;
+        
+        /// <summary>
+        /// GVFeedback control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVFeedback;
+        
+        /// <summary>
+        /// FeedbackForm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl FeedbackForm;
         
         /// <summary>
         /// txtbxName control.
@@ -58,30 +94,21 @@ namespace StechAcademy {
         protected global::System.Web.UI.WebControls.DropDownList DDLGender;
         
         /// <summary>
-        /// txtbxEnquiry control.
+        /// txtbxFeedback control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbxEnquiry;
+        protected global::System.Web.UI.WebControls.TextBox txtbxFeedback;
         
         /// <summary>
-        /// btnSubmit control.
+        /// btnBack control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
-        
-        /// <summary>
-        /// btnCancel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancel;
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

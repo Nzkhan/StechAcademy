@@ -75,6 +75,8 @@
     <Content Include="css\et-line-font.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\formStyle.css" />
+    <Content Include="css\materialize.css" />
+    <Content Include="css\materialize.min.css" />
     <Content Include="css\nivo-lightbox.css" />
     <Content Include="css\nivo_themes\default\close%402x.png" />
     <Content Include="css\nivo_themes\default\close.png" />
@@ -96,6 +98,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Gallery.aspx" />
     <Content Include="images\about-img.jpg" />
+    <Content Include="images\BGCLASS.jpg" />
     <Content Include="images\contact-bg.jpg" />
     <Content Include="images\home-bg-slideshow1.jpg" />
     <Content Include="images\home-bg-slideshow2.jpg" />
@@ -112,6 +115,7 @@
     <Content Include="images\team2.jpg" />
     <Content Include="images\team3.jpg" />
     <Content Include="images\team4.jpg" />
+    <Content Include="images\users.png" />
     <Content Include="indexTheme.html" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\custom.js" />
@@ -119,6 +123,8 @@
     <Content Include="js\isotope.js" />
     <Content Include="js\jquery.backstretch.min.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\materialize.js" />
+    <Content Include="js\materialize.min.js" />
     <Content Include="js\nivo-lightbox.min.js" />
     <Content Include="js\smoothscroll.js" />
     <Content Include="js\wow.min.js" />
