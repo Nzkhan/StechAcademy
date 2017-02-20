@@ -11,6 +11,8 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <title>Stech - Admin Courses</title>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -27,7 +29,6 @@
                 <br />
                 <br />
                 <asp:Image ID="ImgNoData" CssClass="col-md-12 col-sm-12 col-xs-12" runat="server" ImageUrl="~/images/no-record-found.png" />
-                <%--<asp:Label ID="lblIfNoRecord" Font-Size="Larger" CssClass="alert alert-danger" runat="server"  Text="No Enquries Found !!"></asp:Label>--%>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -36,7 +37,6 @@
     <%--Table View--%>
     <div class="container" id="CoursesTable" runat="server">
         <div class="row">
-            <%--<div class="col-md-2"></div>--%>
             <div class="col-lg-offset-4 col-lg-4 ">
                 <center>
                 <h1>Courses</h1>
@@ -76,7 +76,6 @@
                 <asp:DropDownList ID="DDLStream" CssClass="form-control" runat="server"></asp:DropDownList>
                 <span class="highlight"></span>
                 <span class="bar"></span>
-
             </div>
 
             <div class="group">
@@ -97,4 +96,5 @@
             <br />
         </div>
     </div>
+
 </asp:Content>

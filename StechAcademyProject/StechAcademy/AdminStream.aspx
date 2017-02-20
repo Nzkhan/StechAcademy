@@ -11,12 +11,51 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <title>Stech - Admin Stream</title>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
+     <%--No info Alert--%>
     <div class="container">
+        <br />
+        <br />
+        <br />
+        <div class="row" id="noInfoAlert" runat="server" visible="false" style="">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <br />
+                <br />
+                <br />
+                <asp:Image ID="ImgNoData" CssClass="col-md-12 col-sm-12 col-xs-12" runat="server" ImageUrl="~/images/no-record-found.png" />
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <div class="container" runat="server" id="StreamTable">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <asp:GridView ID="GVStream" runat="server" AutoGenerateColumns="False" DataKeyNames="streamId" OnPageIndexChanging="GVStream_PageIndexChanging" OnRowCommand="GVStream_RowCommand" OnRowDeleting="GVStream_RowDeleting" OnRowUpdating="GVStream_RowUpdating">
+                    <Columns>
+                        <asp:BoundField DataField="streamName" HeaderText="Stream" />
+                        <asp:TemplateField HeaderText="Actions">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="lnkbtnEdit" runat="server" CommandArgument='<%# Eval("streamId") %>' CommandName="Edit">Edit</asp:LinkButton>
+                                &nbsp;
+                                <asp:LinkButton ID="lknbtnDelete" runat="server" CommandArgument='<%# Eval("streamId") %>' CommandName="Delete">Delete</asp:LinkButton>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                    </Columns>
+                </asp:GridView>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" runat="server" id="StreamForm">
+
         <div class="col-lg-offset-4 col-lg-4" id="panel">
-            <h2>Stream</h2>
+            <h2>Add/Edit Stream</h2>
             <div class="group">
                 <input runat="server" id="txtbxStream" type="text" required>
                 <span class="highlight"></span>
@@ -34,6 +73,7 @@
             <br />
         </div>
     </div>
+
     <script type="text/javascript">
     </script>
     <br />

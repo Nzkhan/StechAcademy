@@ -10,6 +10,8 @@
             text-align: center;
         }
     </style>
+    <title>Stech - Admin Dashboard</title>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
@@ -17,8 +19,9 @@
         </div>
         <div class="row">
 
-            <h1>Welcome , 
-                <asp:Label ID="LblUser" runat="server" Text="@UserName" CssClass="text-success"></asp:Label></h1><br />
+            <h1>Welcome ,
+                <asp:Label ID="LblUser" runat="server" Text="@UserName" CssClass="text-success"></asp:Label></h1>
+            <br />
 
             <div class="col-lg-4 col-md-4 col-sm-6">
 
@@ -34,7 +37,6 @@
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -46,9 +48,7 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -60,12 +60,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminCourses.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Courses<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -77,9 +76,7 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -91,12 +88,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminRegistration.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Students<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -108,12 +104,9 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
-        
             <div class="col-lg-3 col-md-3 col-sm-6">
 
                 <div class="panel panel-primary">
@@ -123,12 +116,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminFeedback.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Feedback<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -140,9 +132,7 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -154,12 +144,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminEnquiry.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Enquiry<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -171,9 +160,7 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -185,12 +172,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminOffers.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Offers<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -202,9 +188,7 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
 
             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -216,12 +200,11 @@
                             <div class="">
 
                                 <span class="x-icon-headings-invert icon-x-order x-icon-headings"></span>
-                                <a style="color: white" href="AdminStream.aspx">
+                                <a style="color: white" href="AdminUsers.aspx">
                                     <h3 class="header-white header-smaller" style="color: white">Users<span style="color: white" class="glyphicon glyphicon-arrow-right pull-right"></span>
                                 </a></h3>
                                 <br />
                             </div>
-
                         </div>
                     </div>
                     <p>
@@ -233,14 +216,8 @@
                     <br />
                    </center>
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
-
 </asp:Content>

@@ -10,8 +10,16 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <title>Stech - Admin Enquiry</title>
+    <style>
+        .overflow{
+            text-overflow:ellipsis;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+
     <div class="container">
         <br />
         <br />
@@ -28,11 +36,13 @@
             <div class="col-md-3"></div>
         </div>
     </div>
+
+
     <div class="container" id="EnquiryTable" runat="server">
         
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-8 "><center>
+            <div class="col-md-6" style="text-overflow:ellipsis"><center>
                 <h1>Enquiry Records</h1>
                 <br/>
                 <asp:GridView ID="GVEnquiry" CssClass="table table-bordered" runat="server" AutoGenerateColumns="False" DataKeyNames="enquiryId" OnPageIndexChanged="GVEnquiry_PageIndexChanged" OnRowCommand="GVEnquiry_RowCommand" OnRowDeleting="GVEnquiry_RowDeleting" OnRowEditing="GVEnquiry_RowEditing">
@@ -41,7 +51,7 @@
                         <asp:BoundField DataField="emailId" HeaderText="Email" />
                         <asp:BoundField DataField="phoneNo" HeaderText="Phone No." />
                         <asp:BoundField DataField="gender" HeaderText="Gender" />
-                        <asp:BoundField DataField="enquiry" HeaderText="Enquiry" />
+                        <%--<asp:BoundField DataField="enquiry" HeaderText="Enquiry"  ><HeaderStyle Width="100px"></HeaderStyle><itemstyle width="200" Height="10px"  CssClass="" /></asp:BoundField>--%>
                         <asp:TemplateField HeaderText="Actions">
                             <ItemTemplate>
                                 
@@ -55,7 +65,7 @@
                     </Columns>
                 </asp:GridView>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
         </div>
     </div>
 

@@ -10,6 +10,9 @@
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
+    <title>Stech - Enquiry</title>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
@@ -50,8 +53,8 @@
                 <br />
                 <asp:DropDownList ID="DDLGender" CssClass="form-control" runat="server">
                     <asp:ListItem Value="0">-- Select --</asp:ListItem>
-                    <asp:ListItem Value="1">Male</asp:ListItem>
-                    <asp:ListItem Value="2">Female</asp:ListItem>
+                    <asp:ListItem Value="Male">Male</asp:ListItem>
+                    <asp:ListItem Value="Female">Female</asp:ListItem>
                 </asp:DropDownList>
             </div>
 

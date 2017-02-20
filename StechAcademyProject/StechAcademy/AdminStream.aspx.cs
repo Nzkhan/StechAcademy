@@ -28,5 +28,25 @@ namespace StechAcademy
         {
             txtbxStream.Value = "";
         }
+
+        protected void GVStream_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void GVStream_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void GVStream_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+
+        }
+
+        protected void GVStream_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
+        }
     }
 }
