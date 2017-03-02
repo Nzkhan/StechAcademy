@@ -1,22 +1,21 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="AdminDashboard.aspx.cs" Inherits="StechAcademy.AdminDashboard" %>
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style>
-        .dashboard-progress-bar {
-            margin-top: 10px;
-        }
 
-        .dashboard-leads-indicator {
-            text-align: center;
-        }
-    </style>
-    <title>Stech - Admin Dashboard</title>
 
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/formStyle.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   
+    <br /><br />
     <div class="container">
-        <div class="row" style="height: 50px">
-        </div>
+     
         <div class="row">
 
             <h1>Welcome ,
@@ -219,5 +218,8 @@
                 </div>
             </div>
         </div>
-    </div>
+</div>
+          
+     
+   
 </asp:Content>

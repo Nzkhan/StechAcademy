@@ -22,6 +22,15 @@ namespace StechAcademy {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl noInfoAlert;
         
         /// <summary>
+        /// lnkbtnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkbtnAdd;
+        
+        /// <summary>
         /// ImgNoData control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace StechAcademy {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl StreamTable;
+        
+        /// <summary>
+        /// lnkbtnAdd2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkbtnAdd2;
         
         /// <summary>
         /// GVStream control.

@@ -15,13 +15,27 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <br /><br />
+    <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-4">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="AdminDashboard.aspx"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+                <li><a href="AdminStream.aspx"><i class="fa fa-list-alt fa-fw"></i>Stream</a></li>
+                <li class="active"><a href="AdminCourses.aspx"><i class="fa fa-file-o fa-fw"></i>Courses</a></li>
+                <li><a href="AdminRegistration.aspx"><i class="fa fa-bar-chart-o fa-fw"></i>Students</a></li>
+                <li><a href="AdminFeedback.aspx"><i class="fa fa-table fa-fw"></i>Feedback</a></li>
+                <li><a href="AdminEnquiry.aspx"><i class="fa fa-tasks fa-fw"></i>Enquiry</a></li>
+                <li><a href="AdminUsers.aspx"><i class="fa fa-calendar fa-fw"></i>Offers</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-md-9 col-sm-6 col-xs-4 well">
 
-
+            
     <%--No info Alert--%>
     <div class="container">
-        <br />
-        <br />
-        <br />
+        
         <div class="row" id="noInfoAlert" runat="server" visible="false" style="">
             <div class="col-md-3"></div>
             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -37,18 +51,18 @@
     <%--Table View--%>
     <div class="container" id="CoursesTable" runat="server">
         <div class="row">
-            <div class="col-lg-offset-4 col-lg-4 ">
+            <div class="col-lg-offset-2 col-lg-4 ">
                 <center>
                 <h1>Courses</h1>
                 <br/>
-                <asp:GridView ID="GVCourses" CssClass="table table-bordered" runat="server" AutoGenerateColumns="False" DataKeyNames="courseId"  >
+                <asp:GridView ID="GVCourses" CssClass="table table-bordered" runat="server" AutoGenerateColumns="False" DataKeyNames="courseId" OnPageIndexChanging="GVCourses_PageIndexChanging" OnRowCommand="GVCourses_RowCommand" OnRowDeleting="GVCourses_RowDeleting" OnRowEditing="GVCourses_RowEditing"  >
                     <Columns>
                         <asp:BoundField DataField="courseName" HeaderStyle-CssClass="" HeaderText="Course" />
                         <asp:BoundField DataField="streamName" HeaderStyle-CssClass="" HeaderText="Stream" />
 
                         <asp:TemplateField HeaderText="Actions">
                             <ItemTemplate>
-                                <asp:LinkButton CssClass="btn" ID="lnkView" runat="server" ToolTip="View Record" CommandArgument='<%# Eval("courseId") %>' CommandName="view" Text="Edit"><i class="glyphicon glyphicon-eye-open btn btn-sm btn-primary"></i></asp:LinkButton>
+                                <asp:LinkButton CssClass="btn" ID="lnkView" runat="server" ToolTip="View Record" CommandArgument='<%# Eval("courseId") %>' CommandName="Edit" Text="&lt;i class=&quot;glyphicon glyphicon-eye-open btn btn-sm btn-primary&quot;&gt;&lt;/i&gt;"></asp:LinkButton>
 
                                 <asp:LinkButton CssClass="btn" ID="lnkDelete" ToolTip="Delete Record" OnClientClick="return confirm('Are you sure you want to delete this record');" runat="server" CommandArgument='<%# Eval("courseId") %>' CommandName="Delete" Text="Delete"><i class="glyphicon glyphicon-trash btn btn-sm btn-danger" ></i></asp:LinkButton>
                                 </center>
@@ -63,7 +77,7 @@
 
     <%--Form View--%>
     <div class="container" id="CoursesForm" runat="server">
-        <div class="col-lg-offset-4 col-lg-4" style="" id="panel">
+        <div class="col-lg-offset-3 col-lg-4" style="" id="panel">
             <h2>Courses</h2>
             <div class=" alert alert-success alert-dismissable" id="successAlert" runat="server" visible="false">
                 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -79,7 +93,7 @@
             </div>
 
             <div class="group">
-                <input runat="server" id="txtbxCourse" type="text" required>
+                <input runat="server" id="txtbxCourse" type="text">
                 <span class="highlight"></span>
                 <span class="bar"></span>
                 <label>Course Name</label>
@@ -96,5 +110,10 @@
             <br />
         </div>
     </div>
+
+
+        </div>
+    </div>
+</div>
 
 </asp:Content>

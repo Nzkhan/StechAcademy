@@ -65,6 +65,7 @@
     <Content Include="AdminOffers.aspx" />
     <Content Include="AdminRegistration.aspx" />
     <Content Include="AdminUsers.aspx" />
+    <Content Include="admin_homepage.html" />
     <Content Include="BscCS.aspx" />
     <Content Include="BscIT.aspx" />
     <Content Include="Carrers.aspx" />
@@ -87,6 +88,7 @@
     <Content Include="css\nivo_themes\default\next.png" />
     <Content Include="css\nivo_themes\default\prev%402x.png" />
     <Content Include="css\nivo_themes\default\prev.png" />
+    <Content Include="css\sidebar.css" />
     <Content Include="css\style.css" />
     <Content Include="Downloads.aspx" />
     <Content Include="Enquiry.aspx" />
@@ -97,6 +99,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Gallery.aspx" />
+    <Content Include="HtmlPage1.html" />
     <Content Include="images\about-img.jpg" />
     <Content Include="images\BGCLASS.jpg" />
     <Content Include="images\contact-bg.jpg" />
@@ -116,17 +119,22 @@
     <Content Include="images\team3.jpg" />
     <Content Include="images\team4.jpg" />
     <Content Include="images\users.png" />
+    <Content Include="index.html" />
     <Content Include="indexTheme.html" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\classie.js" />
     <Content Include="js\custom.js" />
+    <Content Include="js\draggabilly.pkgd.min.js" />
     <Content Include="js\imagesloaded.min.js" />
     <Content Include="js\isotope.js" />
     <Content Include="js\jquery.backstretch.min.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\materialize.js" />
     <Content Include="js\materialize.min.js" />
+    <Content Include="js\modernizr.custom.js" />
     <Content Include="js\nivo-lightbox.min.js" />
     <Content Include="js\smoothscroll.js" />
+    <Content Include="js\snap.svg-min.js" />
     <Content Include="js\wow.min.js" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />

@@ -6,12 +6,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ConnectionLink;
+using System.Data.SqlClient;
 
 namespace StechAcademy
 {
     public partial class AdminCourses : System.Web.UI.Page
     {
         ConnectionClass c = new ConnectionClass();
+        public static int CourseId;
+        public static string status;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -62,9 +65,22 @@ namespace StechAcademy
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            string query = "insert into courses values ('" + txtbxCourse.Value + "','" + DDLStream.SelectedValue + "')";
-            c.IfAdd(query);
+            if (status == "Add")
+            {
+                string query = "insert into courses values ('" + txtbxCourse.Value + "','" + DDLStream.SelectedValue + "')";
+                c.IfAdd(query);
 
+            }
+            else if (status == "Edit")
+            {
+
+                string queryEdit = " update courses set CourseName= '" + txtbxCourse.Value + "', StreamId  = '" + DDLStream.SelectedValue + "' where CourseId= '" + CourseId + "'";
+                c.IfEdit(queryEdit);
+
+            }
+            
+            BindGrid();
+            
             successAlert.Visible = true; 
 
             txtbxCourse.Value = "";
@@ -77,27 +93,49 @@ namespace StechAcademy
             DDLStream.SelectedIndex = 0;
         }
 
-        protected void GVFeedback_RowCommand(object sender, GridViewCommandEventArgs e)
+      
+
+        protected void GVCourses_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            CourseId = Convert.ToInt32(e.CommandArgument.ToString());
+            if (e.CommandName == "Edit")
+            {
+                status = "Edit";
+                CoursesTable.Visible = false;
+                CoursesForm.Visible = true;
+
+                string query = " select * from courses where courseid = '" + CourseId + "'";
+
+                SqlDataReader dr = c.editData(query);
+                while (dr.Read())
+                {
+                    DDLStream.SelectedValue = dr[2].ToString();
+                    txtbxCourse.Value = dr[1].ToString();
+                    //DDLStream.SelectedValue = dr[3].ToString();
+                }
+
+            }
+            else if (e.CommandName == "Delete")
+            {
+                string query = " delete from courses where courseid = '" + CourseId + "'";
+                c.deleteData(query);
+                c.closeConn();
+                BindGrid();
+            }
+
+        }
+
+        protected void GVCourses_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            
+        }
+
+        protected void GVCourses_RowEditing(object sender, GridViewEditEventArgs e)
         {
 
         }
 
-        protected void GVFeedback_PageIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void GVFeedback_RowEditing(object sender, GridViewEditEventArgs e)
-        {
-
-        }
-
-        protected void GVFeedback_RowDeleting(object sender, GridViewDeleteEventArgs e)
-        {
-
-        }
-
-        protected void GVFeedback_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        protected void GVCourses_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
 
         }

@@ -5,6 +5,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+
+  <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Elastic SVG Elements | Sidebar menu</title>
+		<meta name="description" content="Adding elasticity with SVG shape animations" />
+		<meta name="keywords" content="svg, morph, snap.svg, effect, animation, css, shape" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+		<script src="js/snap.svg-min.js"></script>
+
+
+
     <meta charset="utf-8">
     
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -26,6 +43,18 @@ http://www.tooplate.com/view/2075-digital-team
     <link rel="stylesheet" href="css/nivo_themes/default/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>Vertical Admin Menu - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css);
+body{margin-top:20px;}
+.fa-fw {width: 2em;}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -52,7 +81,7 @@ http://www.tooplate.com/view/2075-digital-team
     </div>
 
     <div class="row">
-        <div class="col-md-12" style="width: 100%; height: 70px; background-color: black">
+        <div class="col-md-12" style="width: 100%; height: 70px; background-color: black;top:0">
         </div>
     </div>
 
@@ -69,25 +98,98 @@ http://www.tooplate.com/view/2075-digital-team
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="">HOME</a></li>
-                    <li><a href="#work" class="smoothScroll">CONTACT</a></li>
-                    <li><a href="#about" class="smoothScroll">ABOUT</a></li>
-                    <li><a href="#team" class="smoothScroll">FEEDBACK</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">ENQUIRY</a></li>
-                    <li><a href="#pricing" class="smoothScroll">COURSES</a></li>
-                    <%--<li><a href="#contact" class="smoothScroll">CONTACT</a></li>--%>
+                    <li ><a href="#" class="btn btn-xs btn-danger" runat="server"><i class="glyphicon glyphicon-off"></i>Log Out</a></li>
                 </ul>
             </div>
         </div>
     </section>
+    <br /><br />
+    <div class="theme-1">
+		<div class="container">
+			<nav id="menu" class="menu">
+				<button class="menu__handle"><span>Menu</span></button>
+				<div class="menu__inner">
+					<ul>
+						<li><a href="#"><i class="fa fa-fw fa-home"></i><span>Home<span></a></li>
+						<li><a href="#"><i class="fa fa-fw fa-heart"></i><span>Favs<span></a></li>
+						<li><a href="#"><i class="fa fa-fw fa-folder"></i><span>Files<span></a></li>
+						<li><a href="#"><i class="fa fa-fw fa-tachometer"></i><span>Stats<span></a></li>
+					</ul>
+				</div>
+				<div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+					<svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+						<path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410"/>
+					</svg>
+				</div>
+			</nav>
+			<div class="main">
+				
 
-    <form id="form1" runat="server">
+                <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+         
         </div>
     </form>
 
+
+			</div><!-- /main -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script>
+		    (function () {
+
+		        function SVGMenu(el, options) {
+		            this.el = el;
+		            this.init();
+		        }
+
+		        SVGMenu.prototype.init = function () {
+		            this.trigger = this.el.querySelector('button.menu__handle');
+		            this.shapeEl = this.el.querySelector('div.morph-shape');
+
+		            var s = Snap(this.shapeEl.querySelector('svg'));
+		            this.pathEl = s.select('path');
+		            this.paths = {
+		                reset: this.pathEl.attr('d'),
+		                open: this.shapeEl.getAttribute('data-morph-open'),
+		                close: this.shapeEl.getAttribute('data-morph-close')
+		            };
+
+		            this.isOpen = false;
+
+		            this.initEvents();
+		        };
+
+		        SVGMenu.prototype.initEvents = function () {
+		            this.trigger.addEventListener('click', this.toggle.bind(this));
+		        };
+
+		        SVGMenu.prototype.toggle = function () {
+		            var self = this;
+
+		            if (this.isOpen) {
+		                classie.remove(self.el, 'menu--anim');
+		                setTimeout(function () { classie.remove(self.el, 'menu--open'); }, 250);
+		            }
+		            else {
+		                classie.add(self.el, 'menu--anim');
+		                setTimeout(function () { classie.add(self.el, 'menu--open'); }, 250);
+		            }
+		            this.pathEl.stop().animate({ 'path': this.isOpen ? this.paths.close : this.paths.open }, 350, mina.easeout, function () {
+		                self.pathEl.stop().animate({ 'path': self.paths.reset }, 800, mina.elastic);
+		            });
+
+		            this.isOpen = !this.isOpen;
+		        };
+
+		        new SVGMenu(document.getElementById('menu'));
+
+		    })();
+		</script>
+	</div>
+    
     <!-- footer section -->
     <footer>
         <div class="container">
