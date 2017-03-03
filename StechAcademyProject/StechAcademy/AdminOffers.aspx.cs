@@ -13,5 +13,30 @@ namespace StechAcademy
         {
 
         }
+
+        protected void lnkbtnAdd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void GVUsers_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
+        }
+
+        protected void GVUsers_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void GVUsers_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+        }
+
+        protected void GVUsers_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+
+        }
     }
 }

@@ -16,25 +16,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <br /><br />
-    <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
-                <li><a href="#"><i class="fa fa-list-alt fa-fw"></i>Widgets</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-file-o fa-fw"></i>Pages</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-bar-chart-o fa-fw"></i>Charts</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-table fa-fw"></i>Table</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-tasks fa-fw"></i>Forms</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-calendar fa-fw"></i>Calender</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-book fa-fw"></i>Library</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-pencil fa-fw"></i>Applications</a></li>
-                <li><a href="http://www.jquery2dotnet.com"><i class="fa fa-cogs fa-fw"></i>Settings</a></li>
-            </ul>
-        </div>
-        <div class="col-md-9 well">
-          <div class="container">
+
         
               <%--No info Alert--%>
         <div class="row" id="noInfoAlert" runat="server" visible="false" style="">
@@ -48,12 +30,12 @@
             </div>
             <div class="col-md-3"></div>
         </div>
-    </div>
+   
 
     <div class="container" runat="server" id="StreamTable">
         <div class="row">
-            
-            <div class="col-md-3 col-md-offset-3">
+            <br /><br />
+            <div class="col-md-3 col-md-offset-4">
                 <center><h1 class="center">Stream</h1></center><br />
                 <asp:LinkButton ID="lnkbtnAdd2" runat="server" ToolTip="Add New Record" CssClass="btn btn-group btn-sm btn-success " OnClick="lnkbtnAdd_Click" Text="New Record"><i class="glyphicon glyphicon-plus "></i> New Record</asp:LinkButton>
                 <br /><br />
@@ -75,7 +57,7 @@
     </div>
 
     <div class="container" runat="server" id="StreamForm">
-
+        <br /><br />
         <div class="col-lg-offset-4 col-lg-4" id="panel">
             <h2>Add/Edit Stream</h2>
             <div class="group">
@@ -95,10 +77,7 @@
             <br />
         </div>
     </div>
-        </div>
-    </div>
-</div>
-    
+      
 
     <script type="text/javascript">
     </script>

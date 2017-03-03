@@ -19,10 +19,10 @@ namespace StechAcademy
         {
             if (!IsPostBack)
             {
-                BindGrid();
                 BindStreamDropDown();
                 CoursesForm.Visible = false;
                 CoursesTable.Visible = true;
+                BindGrid();
             }
         }
 
@@ -61,7 +61,7 @@ namespace StechAcademy
                 //myItem.Attributes.Add("style", "fore-color:white");
             }
             //ScriptManager.RegisterClientScriptBlock(Page, typeof(Page), "ClientScript", "alert('hey')", true);
-
+            c.closeConn();
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -91,6 +91,8 @@ namespace StechAcademy
         {
             txtbxCourse.Value = "";
             DDLStream.SelectedIndex = 0;
+            CoursesForm.Visible = false;
+            CoursesTable.Visible = true;
         }
 
       
@@ -139,6 +141,16 @@ namespace StechAcademy
         {
 
         }
+
+        protected void lnkbtnAdd_Click(object sender, EventArgs e)
+        {
+            status = "Add";
+            noInfoAlert.Visible = false;
+            CoursesTable.Visible = false;
+            CoursesForm.Visible = true;
+        }
+
+        
 
         
     }
